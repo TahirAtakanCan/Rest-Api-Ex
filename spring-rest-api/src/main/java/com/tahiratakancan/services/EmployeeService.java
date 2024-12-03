@@ -15,8 +15,8 @@ public class EmployeeService {
 
     public List<Employee> getAllEmployeeList(){
         // 100'lerce satır kontrol yapacaksınız.
-        employeeRepository.getAllEmployeeList();
-        return null;
+        //employeeRepository.getAllEmployeeList();
+        return employeeRepository.getAllEmployeeList();
     }
 
 }

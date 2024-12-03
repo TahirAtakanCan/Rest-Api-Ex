@@ -21,8 +21,8 @@ public class RestEmployeeController {
     public List<Employee> getAllEmployeeList(){
 
         //Controller katmanından Service katmanına geçiş yaptım.
-        employeeService.getAllEmployeeList();
-        return null;
+        //employeeService.getAllEmployeeList();
+        return employeeService.getAllEmployeeList();
     }
 
 }
