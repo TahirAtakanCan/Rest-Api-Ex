@@ -60,4 +60,11 @@ public class EmployeeRepository {
         return employeeWithParams;
     }
 
+    //Post kullanarak yeni kullanıcı ekledim. Bu kullanıcıyı yine repo - service - controller sırasına göre son kullanıcıya ileteceğim
+    public Employee saveEmployee(Employee newEmployee){
+        employeeList.add(newEmployee);
+        return newEmployee;
+    }
+
+
 }
