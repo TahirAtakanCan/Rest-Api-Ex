@@ -66,5 +66,21 @@ public class EmployeeRepository {
         return newEmployee;
     }
 
+    // Silme işlemi yaparken remove komutunu düzgün kullanmak önemli.
+    public boolean deleteEmployee(String id){
+        Employee deleteEmployee = null;
+        for (Employee employee : employeeList){
+            if(id.equals(employee.getId())) {
+                deleteEmployee = employee;
+                break;
+            }
+        }
+        if (deleteEmployee == null){
+            return false;
+        }
+        employeeList.remove(deleteEmployee);
+        return true;
+    }
+
 
 }
