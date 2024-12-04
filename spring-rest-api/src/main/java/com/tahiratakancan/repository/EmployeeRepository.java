@@ -16,4 +16,18 @@ public class EmployeeRepository {
 
         return employeeList;
     }
+
+    // Kullanıcının id = 5 değeri olan kaydı getirmesi için aşağıdaki kodu yazdık.
+
+    public Employee getEmployeeById(String id){
+        Employee findEmployee = null;
+        for (Employee employee : employeeList){
+            if (id.equals(employee.getId())){
+                findEmployee = employee;
+                break;
+            }
+        }
+        return findEmployee;
+    }
+
 }

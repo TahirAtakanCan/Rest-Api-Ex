@@ -19,4 +19,10 @@ public class EmployeeService {
         return employeeRepository.getAllEmployeeList();
     }
 
+    // Katman dögüsünde repository katmanından service katmanına geçişi sağladık.
+
+    public Employee getEmployeeById(String id){
+        return employeeRepository.getEmployeeById(id);
+    }
+
 }
